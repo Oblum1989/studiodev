@@ -6,30 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Studio Dev</title>
+    
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+
+    
 </head>
 
 <body>
-    <header>
-        <img src="images/logo.png" alt="Logo Studio Dev">
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">Servicios</a>
-            <a href="#">Portafolio</a>
-            <a href="#">Contacto</a>
-        </nav>
-    </header>
-    <section>
-        <h1>CREAMOS LAS APLICACIONES DEL FUTURO</h1>
-        <p>Dev Studio es la mejor opcion si necesitas un prototipo o si quieres acelerar tu ciclo de desarrollo.</p>
+    <div class="home-wrapper">
+        <header class="container">
+            <img src="images/logo.png" alt="Logo Studio Dev">
+            <nav>
+                <a class="active" href="#">Home</a>
+                <a href="#">Servicios</a>
+                <a href="#">Portafolio</a>
+                <a href="#">Contacto</a>
+            </nav>
+        </header>
+        <section id="home" class="container">
+            <h1>CREAMOS LAS <strong>APLICACIONES</strong> DEL FUTURO </h1>
+            <p>Dev Studio es la mejor opcion si necesitas un prototipo o si quieres acelerar tu ciclo de desarrollo.</p>
 
-        <div>
-            <a href="#">Facebook</a>
-            <a href="#">Twitter</a>
-            <a href="#">Github</a>
-        </div>
-    </section>
+            <div class="social">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+        </section>
+    </div>
+
     <section>
         <h2>SERVICIOS</h2>
 
