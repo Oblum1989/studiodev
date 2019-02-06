@@ -1,47 +1,76 @@
-body{
+* {
+    box-sizing: border-box;
+}
+
+body {
     font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
 }
+
 .home-wrapper {
-    background: url('../images/background.jpg') no-repeat center top;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/background.jpg') no-repeat center top;
     background-size: cover;
-    color: white; 
+    color: white;
 }
-header{
+
+header {
     padding: 10px 0;
+    width: 100%;
+    position: fixed;
+    background-color: rgb(48, 48, 48, 0.5)
 }
-header img{
+
+header img {
     width: 200px;
 }
-header nav{
+
+header nav {
     float: right;
     margin-top: 10px;
 }
-header nav a{
+
+header nav a {
     color: white;
     font-weight: bold;
     text-decoration: none;
     margin-left: 10px;
     padding: 10px 15px;
 }
-header nav a.active{
+
+header nav a.active {
     background: #fed136;
     border-radius: 3px;
 }
-#home{
+
+#home {
     text-align: center;
     padding: 200px 0 150px;
 }
-#home h1{
+
+#home h1 {
     font-size: 68px;
     font-weight: normal;
+    line-height: 1.2;
+    margin-bottom: 40px;
 }
-#home p{
+
+#home .divider {
+    width: 80px;
+    border-top: 5px solid #fed136;
+    margin: 0 auto;
+}
+
+#home p {
     font-size: 24px;
+    margin-top: 40px;
 }
-#home .social{
+
+#home .social {
     margin-top: 80px;
 }
-#home .social a{
+
+#home .social a {
     color: white;
     display: inline-block;
     border-radius: 50%;
@@ -54,10 +83,100 @@ header nav a.active{
     margin-right: 10px;
     transition: all .3s ease;
 }
-#home .social a:hover{
+
+#home .social a:hover {
     background-color: #fed136;
 }
-.container{
+
+#servicios .box {
+    display: inline-block;
+    text-align: center;
+    width: 33%;
+    padding: 10px;
+}
+
+#video {
+    background-color: black;
+    text-align: center;
+    padding: 30px 0;
+}
+
+#portafolio {
+    background: whitesmoke;
+}
+
+#portafolio .box {
+    display: inline-block;
+    text-align: center;
+    width: 31%;
+    margin: 1%;
+    background-color: white;
+}
+
+#portafolio .box img {
+    width: 100%;
+}
+
+#portafolio .box p {
+    color: #666;
+    padding: 10px;
+}
+
+#contacto {
+    background-color: #303030;
+    background-image: url('../images/map-image.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+#contacto h2 {
+    color: white;
+}
+
+#contacto input {
+    padding: 20px;
+    width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+#contacto textarea {
+    margin: 20px 0;
+    padding: 20px;
+    width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+#contacto button {
+    background-color: #fed136;
+    padding: 20px 40px;
+    border-color: #fed136;
+    border-radius: 3px;
+    color: white;
+    font-size: 18px;
+    line-height: 1;
+    font-weight: bold;
+}
+
+footer {
+    padding: 90px 0;
+    text-align: center;
+    font-size: 18px;
+}
+
+section {
+    padding: 80px 0;
+}
+
+section h2 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.container {
     width: 992px;
     margin-left: auto;
     margin-right: auto;
