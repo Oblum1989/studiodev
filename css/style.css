@@ -36,9 +36,15 @@ header nav a {
     text-decoration: none;
     margin-left: 10px;
     padding: 10px 15px;
+    transition: all .3s ease;
 }
 
 header nav a.active {
+    background: #fed136;
+    border-radius: 3px;
+}
+
+header nav a:hover {
     background: #fed136;
     border-radius: 3px;
 }
@@ -158,12 +164,47 @@ header nav a.active {
     font-size: 18px;
     line-height: 1;
     font-weight: bold;
+    transition: all .3s ease;
+}
+
+#contacto button:hover {
+    background-color: #292929;
+    border-color: #292929;
 }
 
 footer {
-    padding: 90px 0;
+    padding: 20px 0;
     text-align: center;
     font-size: 18px;
+    background-color: #282828;
+    color: white;
+}
+
+.redes-sociales{
+    display: flex;
+    justify-content: center;
+}
+
+.redes-sociales li{
+    list-style: none;
+}
+
+.redes-sociales li a {
+    color: white;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: black;
+    font-size: 24px;
+    font-weight: bold;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    margin-right: 10px;
+    transition: all .3s ease;
+}
+
+.redes-sociales li a:hover {
+    background-color: #fed136;
 }
 
 section {
